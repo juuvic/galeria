@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            background-image: url('./img/papeldeparede.png');
+            background-position: center;
+            background-size: cover;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #calculadora {
+            width: 300px;
+            height:35rem;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+      
+        input {
+            width: 90%;
+            padding: 7px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+       }
+       #resultado {
+            margin-top: 20px;
+            font-size: 1.3em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+    <h1><span>CALCULADORA  JÚLIA</span></h1>
+<form>
+    <label>Primeiro Número</label>
+    <input type="numero" id="n1" placeholder="Digite aqui!">
+    <br>
+    <label>Segundo Número</label>
+    <input type="numero" id="n2"placeholder="Digite aqui!">
+    <br>
+    <label>Terceiro Número</label>
+    <input type="numero" id="n3" placeholder="Digite aqui!">
+    <br>
+    <label>Quarto Número</label>
+    <input type="numero"  id="n4" placeholder="Digite aqui!">
+    <br>
+    <label>Quinto Número</label>
+    <input type="numero" id="n5"placeholder="Digite aqui!" >
+    <br>
+    <label>Sexto Número</label>
+    <input type="numero" id="n6" placeholder="Digite aqui!" >
+    <br>
+    <button type="button" onclick="calcular()"><span>Calcular</span></button>
+</form>
+
+<div id="resultado"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
